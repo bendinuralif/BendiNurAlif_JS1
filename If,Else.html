@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If, Else, Nested If</title>
+</head>
+<body>
+    <h1>Contoh If-Else dan Nested If</h1>
+    <input type="number" id="inputAngka" placeholder="Masukkan angka">
+    <button onclick="cekAngka()">Cek</button>
+    <p id="hasil"></p>
+
+    <script>
+        function cekAngka() {
+            var angka = parseInt(document.getElementById("inputAngka").value);
+            var hasil = document.getElementById("hasil");
+
+            if (angka > 0) {
+                hasil.innerHTML = "Angka " + angka + " adalah positif.";
+            } else if (angka < 0) {
+                hasil.innerHTML = "Angka " + angka + " adalah negatif.";
+            } else {
+                hasil.innerHTML = "Angka " + angka + " adalah nol.";
+            }
+        }
+    </script>
+</body>
+</html>

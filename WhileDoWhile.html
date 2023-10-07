@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While dan Do While</title>
+</head>
+<body>
+    <h1>Contoh While dan Do While</h1>
+    <ul id="daftarAngka"></ul>
+
+    <script>
+        var daftarAngka = document.getElementById("daftarAngka");
+        var i = 1;
+
+        while (i <= 5) {
+            var li = document.createElement("li");
+            li.textContent = "Angka " + i;
+            daftarAngka.appendChild(li);
+            i++;
+        }
+
+        // Contoh dengan do while
+        var j = 1;
+        do {
+            var li = document.createElement("li");
+            li.textContent = "Angka " + j;
+            daftarAngka.appendChild(li);
+            j++;
+        } while (j <= 5);
+    </script>
+</body>
+</html>
